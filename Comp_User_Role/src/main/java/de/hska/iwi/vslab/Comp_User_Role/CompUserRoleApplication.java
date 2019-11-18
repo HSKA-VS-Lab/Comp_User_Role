@@ -5,12 +5,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 
 import de.hska.iwi.vslab.Comp_User_Role.ConsumingREST.ConsumeCoreUser;
 import de.hska.iwi.vslab.Comp_User_Role.ConsumingREST.User;
 import de.hska.iwi.vslab.Comp_User_Role.Services.UserRoleService;
 
+@EnableEurekaClient
 @SpringBootApplication
 public class CompUserRoleApplication {
 
@@ -20,7 +22,7 @@ public class CompUserRoleApplication {
 		SpringApplication.run(CompUserRoleApplication.class, args);
 	}
 
-	@Bean
+	/*@Bean
 	public CommandLineRunner demo() {
 		return (args) -> {
 			log.info("Demo starting:");
@@ -38,6 +40,6 @@ public class CompUserRoleApplication {
 
 			log.info("Demo finishing.");
 		};
-	}
+	}*/
 
 }

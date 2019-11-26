@@ -1,6 +1,7 @@
 package de.hska.iwi.vslab.Comp_User_Role.ConsumingREST;
 
 
+
 public class User {
 
     private int id;

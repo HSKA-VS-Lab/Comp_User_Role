@@ -11,7 +11,6 @@
 	<groupId>de.hska.iwi.vslab</groupId>
 	<artifactId>Comp_User_Role</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
 	<name>Comp_User_Role</name>
 	<description>User_Role Composite Service</description>
 

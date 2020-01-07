@@ -15,8 +15,9 @@ public class ConsumeCoreRole {
     public int getRoleIdForUser() {
         try {
             UrlBuilder urlBuilder = new UrlBuilder();
-            log.info("URL:" + urlBuilder.getRoleUrl_user());
+            log.info("getRoleUrl_user():" + urlBuilder.getRoleUrl_user());
             Role role = restTemplate.getForObject(urlBuilder.getRoleUrl_user(), Role.class);
+            log.info("roleId:" + role.getId());
             return role.getId();
         } catch (Exception e) {
             System.out.println(e);

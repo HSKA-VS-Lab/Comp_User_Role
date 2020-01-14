@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 
@@ -14,6 +15,7 @@ import de.hska.iwi.vslab.Comp_User_Role.Services.UserRoleService;
 
 @EnableEurekaClient
 @SpringBootApplication
+@EnableCircuitBreaker
 public class CompUserRoleApplication {
 
 	private static final Logger log = LoggerFactory.getLogger(CompUserRoleApplication.class);

@@ -20,7 +20,7 @@ public class UserRoleController {
     private static final Logger log = LoggerFactory.getLogger(UserRoleController.class);
 
     @PostMapping(path="/comp_user_role/user", consumes = "application/json")
-    @HystrixCommand(fallbackMethod = "defaultFallback")
+    //@HystrixCommand(fallbackMethod = "defaultFallback")
     public void register(@RequestBody(required = true) User request) {
         log.info("register(firstname, lastname, username, password) was called");
         userRoleService.register(request.getFirstname(), request.getLastname(), request.getUsername(), request.getPassword());
